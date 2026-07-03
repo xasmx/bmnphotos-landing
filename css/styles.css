@@ -160,6 +160,7 @@ h1 {
 .section-heading p { margin: 0; color: var(--muted); font-size: 1.04rem; }
 .dark .section-heading p { color: rgba(255,253,248,.7); }
 .services, .portfolio-category-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+.portfolio-entry-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 .service-card, .rate-card, .contact-card, .about-card, .portfolio-category-card {
   border-radius: var(--radius);
   background: var(--white);
@@ -182,13 +183,13 @@ h1 {
   background: radial-gradient(circle at top right, rgba(200,146,91,.34), transparent 42%);
   pointer-events: none;
 }
-.service-card h3, .service-card p, .portfolio-category-card h3, .portfolio-category-card p, .portfolio-category-card .small-link { position: relative; }
+.service-card h3, .service-card p, .service-card .small-link, .portfolio-category-card h3, .portfolio-category-card p, .portfolio-category-card .small-link { position: relative; }
 .service-card h3, .portfolio-category-card h3 { font-size: 1.28rem; margin-bottom: 8px; }
-.portfolio-category-card h3 { color: var(--text); }
+.portfolio-category-card h3, .service-card h3 { color: var(--text); }
 .service-card p, .portfolio-category-card p { margin: 0; color: var(--muted); }
-.portfolio-category-card .small-link { margin-top: 16px; color: var(--brand-dark); font-weight: 800; }
-.portfolio-category-card:hover, .portfolio-category-card:focus-visible { transform: translateY(-3px); outline: none; }
-.portfolio-category-card { transition: transform .2s ease, box-shadow .2s ease; }
+.portfolio-category-card .small-link, .service-card .small-link { margin-top: 16px; color: var(--brand-dark); font-weight: 800; }
+.portfolio-category-card:hover, .portfolio-category-card:focus-visible, .service-card:hover, .service-card:focus-visible { transform: translateY(-3px); outline: none; }
+.portfolio-category-card, .service-card { transition: transform .2s ease, box-shadow .2s ease; }
 .rates-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .rate-card { padding: 30px; display: flex; flex-direction: column; gap: 18px; border: 1px solid rgba(36,31,26,.08); }
 .rate-card.featured { background: #17130f; color: var(--white); transform: translateY(-10px); }
@@ -250,7 +251,7 @@ textarea { min-height: 130px; resize: vertical; }
   .nav-links { justify-content: flex-start; }
   .hero { min-height: 860px; background-position: 66% center; }
   .section-heading, .about-layout, .contact-wrap { grid-template-columns: 1fr; }
-  .services, .rates-grid, .portfolio-category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .services, .rates-grid, .portfolio-category-grid, .portfolio-entry-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .rate-card.featured { transform: none; }
   .gallery-item, .gallery-item.wide { grid-column: span 6; }
   .page-hero { min-height: 260px; }
@@ -259,7 +260,7 @@ textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 620px) {
   .nav-links a { padding: 8px 9px; font-size: .88rem; }
   .hero-inner { padding-top: 190px; }
-  .services, .rates-grid, .portfolio-category-grid { grid-template-columns: 1fr; }
+  .services, .rates-grid, .portfolio-category-grid, .portfolio-entry-grid { grid-template-columns: 1fr; }
   .gallery-item, .gallery-item.wide { grid-column: span 12; min-height: 330px; }
   .gallery-item.tall { min-height: 420px; }
   .page-hero { min-height: 230px; }
