@@ -184,8 +184,11 @@ h1 {
 }
 .service-card h3, .service-card p, .portfolio-category-card h3, .portfolio-category-card p, .portfolio-category-card .small-link { position: relative; }
 .service-card h3, .portfolio-category-card h3 { font-size: 1.28rem; margin-bottom: 8px; }
+.portfolio-category-card h3 { color: var(--text); }
 .service-card p, .portfolio-category-card p { margin: 0; color: var(--muted); }
 .portfolio-category-card .small-link { margin-top: 16px; color: var(--brand-dark); font-weight: 800; }
+.portfolio-category-card:hover, .portfolio-category-card:focus-visible { transform: translateY(-3px); outline: none; }
+.portfolio-category-card { transition: transform .2s ease, box-shadow .2s ease; }
 .rates-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .rate-card { padding: 30px; display: flex; flex-direction: column; gap: 18px; border: 1px solid rgba(36,31,26,.08); }
 .rate-card.featured { background: #17130f; color: var(--white); transform: translateY(-10px); }
