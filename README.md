@@ -161,3 +161,4 @@ Google Drive can work well as a starter option, but it is not a dedicated image 
 - If images load slowly or inconsistently later, consider moving the final public gallery images to Cloudinary while keeping Google Sheets as the gallery manager.
 
 A good starting size for website gallery images is usually around 1600-2400px wide.
+
