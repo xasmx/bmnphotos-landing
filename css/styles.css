@@ -161,6 +161,8 @@ h1 {
 .dark .section-heading p { color: rgba(255,253,248,.7); }
 .services, .portfolio-category-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
 .portfolio-entry-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.services-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.services-grid .service-card { justify-content: flex-start; min-height: 205px; }
 .service-card, .rate-card, .contact-card, .about-card, .portfolio-category-card {
   border-radius: var(--radius);
   background: var(--white);
@@ -251,7 +253,7 @@ textarea { min-height: 130px; resize: vertical; }
   .nav-links { justify-content: flex-start; }
   .hero { min-height: 860px; background-position: 66% center; }
   .section-heading, .about-layout, .contact-wrap { grid-template-columns: 1fr; }
-  .services, .rates-grid, .portfolio-category-grid, .portfolio-entry-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .services, .rates-grid, .portfolio-category-grid, .portfolio-entry-grid, .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .rate-card.featured { transform: none; }
   .gallery-item, .gallery-item.wide { grid-column: span 6; }
   .page-hero { min-height: 260px; }
@@ -260,7 +262,7 @@ textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 620px) {
   .nav-links a { padding: 8px 9px; font-size: .88rem; }
   .hero-inner { padding-top: 190px; }
-  .services, .rates-grid, .portfolio-category-grid, .portfolio-entry-grid { grid-template-columns: 1fr; }
+  .services, .rates-grid, .portfolio-category-grid, .portfolio-entry-grid, .services-grid { grid-template-columns: 1fr; }
   .gallery-item, .gallery-item.wide { grid-column: span 12; min-height: 330px; }
   .gallery-item.tall { min-height: 420px; }
   .page-hero { min-height: 230px; }
