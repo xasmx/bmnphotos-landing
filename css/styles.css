@@ -192,6 +192,16 @@ h1 {
 .portfolio-category-card .small-link, .service-card .small-link { margin-top: 16px; color: var(--brand-dark); font-weight: 800; }
 .portfolio-category-card:hover, .portfolio-category-card:focus-visible, .service-card:hover, .service-card:focus-visible { transform: translateY(-3px); outline: none; }
 .portfolio-category-card, .service-card { transition: transform .2s ease, box-shadow .2s ease; }
+/* Keep the dedicated Services section cards top-aligned.
+   Portfolio entry cards can keep their own visual treatment. */
+#services .service-card {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#services .service-card p {
+  margin-top: 0;
+}
+
 .rates-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .rate-card { padding: 30px; display: flex; flex-direction: column; gap: 18px; border: 1px solid rgba(36,31,26,.08); }
 .rate-card.featured { background: #17130f; color: var(--white); transform: translateY(-10px); }
