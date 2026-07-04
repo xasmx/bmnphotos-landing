@@ -41,12 +41,13 @@
     <section class="gallery-section">
       <div class="section-inner">
         <div class="gallery-toolbar">
-          <span>Replace these sample filenames with your actual photos as the gallery grows.</span>
+          <span>Photos are loaded from the BMN Photos gallery spreadsheet.</span>
           <nav class="category-nav" aria-label="Portfolio category navigation"><a class="" href="portfolio-events.html">Events</a><a class="" href="portfolio-families.html">Families</a><a class="active" href="portfolio-portraits.html">Portraits</a><a class="" href="portfolio-business.html">Small Business</a><a class="" href="portfolio-celebrations.html">Celebrations</a></nav>
         </div>
-        <div class="gallery-grid">
-          <article class="gallery-item wide"><img src="portfolio/portraits/natural-light-portrait.jpg" alt="Natural Light Portrait" /><div class="gallery-caption"><strong>Natural Light Portrait</strong></div></article><article class="gallery-item tall"><img src="portfolio/portraits/senior-photo-candid.jpg" alt="Senior Photo Candid" /><div class="gallery-caption"><strong>Senior Photo Candid</strong></div></article><article class="gallery-item"><img src="portfolio/portraits/creative-headshot.jpg" alt="Creative Headshot" /><div class="gallery-caption"><strong>Creative Headshot</strong></div></article><article class="gallery-item"><img src="portfolio/portraits/environmental-portrait.jpg" alt="Environmental Portrait" /><div class="gallery-caption"><strong>Environmental Portrait</strong></div></article><article class="gallery-item"><img src="portfolio/portraits/personal-branding-portrait.jpg" alt="Personal Branding Portrait" /><div class="gallery-caption"><strong>Personal Branding Portrait</strong></div></article><article class="gallery-item"><img src="portfolio/portraits/golden-hour-portrait.jpg" alt="Golden Hour Portrait" /><div class="gallery-caption"><strong>Golden Hour Portrait</strong></div></article>
+        <div class="gallery-grid" data-gallery-category="portraits" aria-live="polite">
+          <div class="gallery-status" data-gallery-loading>Loading gallery photos…</div>
         </div>
+        <div class="gallery-status" data-gallery-empty hidden>No photos are published in this gallery yet.</div>
       </div>
     </section>
   </main>
@@ -56,6 +57,8 @@
       <span>Photography, editing, restoration, printing, digitization, and creative photo services.</span>
     </div>
   </footer>
+  <script src="js/gallery-config.js"></script>
+  <script src="js/gallery.js"></script>
   <script src="js/site.js"></script>
 </body>
 </html>

@@ -41,12 +41,13 @@
     <section class="gallery-section">
       <div class="section-inner">
         <div class="gallery-toolbar">
-          <span>Replace these sample filenames with your actual photos as the gallery grows.</span>
+          <span>Photos are loaded from the BMN Photos gallery spreadsheet.</span>
           <nav class="category-nav" aria-label="Portfolio category navigation"><a class="" href="portfolio-events.html">Events</a><a class="" href="portfolio-families.html">Families</a><a class="" href="portfolio-portraits.html">Portraits</a><a class="" href="portfolio-business.html">Small Business</a><a class="active" href="portfolio-celebrations.html">Celebrations</a></nav>
         </div>
-        <div class="gallery-grid">
-          <article class="gallery-item wide"><img src="portfolio/celebrations/birthday-candles-reaction.jpg" alt="Birthday Candles Reaction" /><div class="gallery-caption"><strong>Birthday Candles Reaction</strong></div></article><article class="gallery-item tall"><img src="portfolio/celebrations/shower-gift-laughter.jpg" alt="Shower Gift Laughter" /><div class="gallery-caption"><strong>Shower Gift Laughter</strong></div></article><article class="gallery-item"><img src="portfolio/celebrations/graduation-hug.jpg" alt="Graduation Hug" /><div class="gallery-caption"><strong>Graduation Hug</strong></div></article><article class="gallery-item"><img src="portfolio/celebrations/anniversary-toast.jpg" alt="Anniversary Toast" /><div class="gallery-caption"><strong>Anniversary Toast</strong></div></article><article class="gallery-item"><img src="portfolio/celebrations/kids-party-candid.jpg" alt="Kids Party Candid" /><div class="gallery-caption"><strong>Kids Party Candid</strong></div></article><article class="gallery-item"><img src="portfolio/celebrations/milestone-celebration.jpg" alt="Milestone Celebration" /><div class="gallery-caption"><strong>Milestone Celebration</strong></div></article>
+        <div class="gallery-grid" data-gallery-category="celebrations" aria-live="polite">
+          <div class="gallery-status" data-gallery-loading>Loading gallery photos…</div>
         </div>
+        <div class="gallery-status" data-gallery-empty hidden>No photos are published in this gallery yet.</div>
       </div>
     </section>
   </main>
@@ -56,6 +57,8 @@
       <span>Photography, editing, restoration, printing, digitization, and creative photo services.</span>
     </div>
   </footer>
+  <script src="js/gallery-config.js"></script>
+  <script src="js/gallery.js"></script>
   <script src="js/site.js"></script>
 </body>
 </html>

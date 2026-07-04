@@ -41,12 +41,13 @@
     <section class="gallery-section">
       <div class="section-inner">
         <div class="gallery-toolbar">
-          <span>Replace these sample filenames with your actual photos as the gallery grows.</span>
+          <span>Photos are loaded from the BMN Photos gallery spreadsheet.</span>
           <nav class="category-nav" aria-label="Portfolio category navigation"><a class="" href="portfolio-events.html">Events</a><a class="" href="portfolio-families.html">Families</a><a class="" href="portfolio-portraits.html">Portraits</a><a class="active" href="portfolio-business.html">Small Business</a><a class="" href="portfolio-celebrations.html">Celebrations</a></nav>
         </div>
-        <div class="gallery-grid">
-          <article class="gallery-item wide"><img src="portfolio/business/local-business-owner-at-work.jpg" alt="Local Business Owner At Work" /><div class="gallery-caption"><strong>Local Business Owner At Work</strong></div></article><article class="gallery-item tall"><img src="portfolio/business/team-candid-meeting.jpg" alt="Team Candid Meeting" /><div class="gallery-caption"><strong>Team Candid Meeting</strong></div></article><article class="gallery-item"><img src="portfolio/business/maker-hands-detail.jpg" alt="Maker Hands Detail" /><div class="gallery-caption"><strong>Maker Hands Detail</strong></div></article><article class="gallery-item"><img src="portfolio/business/product-family-shot.jpg" alt="Product Family Shot" /><div class="gallery-caption"><strong>Product Family Shot</strong></div></article><article class="gallery-item"><img src="portfolio/business/shop-owner-portrait.jpg" alt="Shop Owner Portrait" /><div class="gallery-caption"><strong>Shop Owner Portrait</strong></div></article><article class="gallery-item"><img src="portfolio/business/service-business-action.jpg" alt="Service Business Action" /><div class="gallery-caption"><strong>Service Business Action</strong></div></article>
+        <div class="gallery-grid" data-gallery-category="business" aria-live="polite">
+          <div class="gallery-status" data-gallery-loading>Loading gallery photos…</div>
         </div>
+        <div class="gallery-status" data-gallery-empty hidden>No photos are published in this gallery yet.</div>
       </div>
     </section>
   </main>
@@ -56,6 +57,8 @@
       <span>Photography, editing, restoration, printing, digitization, and creative photo services.</span>
     </div>
   </footer>
+  <script src="js/gallery-config.js"></script>
+  <script src="js/gallery.js"></script>
   <script src="js/site.js"></script>
 </body>
 </html>
