@@ -160,7 +160,7 @@ h1 {
 .section-heading p { margin: 0; color: var(--muted); font-size: 1.04rem; }
 .dark .section-heading p { color: rgba(255,253,248,.7); }
 .services, .portfolio-category-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
-.portfolio-entry-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.portfolio-entry-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .services-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 .services-grid .service-card { justify-content: flex-start; min-height: 205px; }
 .service-card, .rate-card, .contact-card, .about-card, .portfolio-category-card {
@@ -375,4 +375,10 @@ textarea { min-height: 130px; resize: vertical; }
     padding: 8px 28px 8px 9px;
     font-size: .88rem;
   }
+}
+
+/* Keep homepage portfolio/category cards top-aligned as well. */
+.portfolio-entry-grid .service-card {
+  justify-content: flex-start;
+  align-items: flex-start;
 }

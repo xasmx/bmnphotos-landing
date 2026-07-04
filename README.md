@@ -18,6 +18,7 @@ portfolio-families.html
 portfolio-portraits.html
 portfolio-sports.html
 portfolio-celebrations.html
+portfolio-other.html
 css/styles.css
 js/site.js
 js/gallery-config.js
@@ -73,9 +74,10 @@ families
 portraits
 sports
 celebrations
+other
 ```
 
-Each portfolio page requests only its own category.
+Each portfolio page requests only its own category. Use `other` for examples that do not fit events, families, portraits, sports, or celebrations.
 
 ## Column details
 
@@ -161,4 +163,3 @@ Google Drive can work well as a starter option, but it is not a dedicated image 
 - If images load slowly or inconsistently later, consider moving the final public gallery images to Cloudinary while keeping Google Sheets as the gallery manager.
 
 A good starting size for website gallery images is usually around 1600-2400px wide.
-
