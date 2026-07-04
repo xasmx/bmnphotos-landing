@@ -16,7 +16,7 @@ index.html
 portfolio-events.html
 portfolio-families.html
 portfolio-portraits.html
-portfolio-business.html
+portfolio-sports.html
 portfolio-celebrations.html
 css/styles.css
 js/site.js
@@ -71,7 +71,7 @@ Use one of these category values:
 events
 families
 portraits
-business
+sports
 celebrations
 ```
 

@@ -28,17 +28,17 @@
       ['portfolio/portraits/natural-light-portrait.jpg', 'Natural Light Portrait', 'Natural light portrait with candid expression', 'wide'],
       ['portfolio/portraits/senior-photo-outdoors.jpg', 'Senior Photo Outdoors', 'Senior portrait outdoors', 'tall'],
       ['portfolio/portraits/creative-headshot.jpg', 'Creative Headshot', 'Creative headshot portrait', ''],
-      ['portfolio/portraits/personal-branding.jpg', 'Personal Branding', 'Personal branding portrait session', ''],
+      ['portfolio/portraits/individual-portrait.jpg', 'Individual Portraits', 'Natural individual portrait session', ''],
       ['portfolio/portraits/candid-profile.jpg', 'Candid Profile', 'Candid profile portrait', ''],
       ['portfolio/portraits/golden-hour-portrait.jpg', 'Golden Hour Portrait', 'Golden hour portrait session', '']
     ],
-    business: [
-      ['portfolio/business/local-business-owner-at-work.jpg', 'Local Business Owner At Work', 'Small business owner working candidly', 'wide'],
-      ['portfolio/business/team-candid.jpg', 'Team Candid', 'Business team candid photo', 'tall'],
-      ['portfolio/business/product-detail.jpg', 'Product Detail', 'Product detail photo', ''],
-      ['portfolio/business/brand-session.jpg', 'Brand Session', 'Small business brand session', ''],
-      ['portfolio/business/workspace-story.jpg', 'Workspace Story', 'Candid business workspace photo', ''],
-      ['portfolio/business/social-content.jpg', 'Social Content', 'Social media content photography', '']
+    sports: [
+      ['portfolio/sports/game-day-action.jpg', 'Game Day Action', 'Athletes in action during a game', 'wide'],
+      ['portfolio/sports/sideline-team-moment.jpg', 'Sideline Team Moment', 'Team candid photo during a game or tournament', 'tall'],
+      ['portfolio/sports/athlete-detail.jpg', 'Athlete Detail', 'Close-up sports detail photo', ''],
+      ['portfolio/sports/tournament-coverage.jpg', 'Tournament Coverage', 'Sports tournament coverage', ''],
+      ['portfolio/sports/sideline-story.jpg', 'Sideline Story', 'Candid sideline sports moment', ''],
+      ['portfolio/sports/sports-highlights.jpg', 'Sports Highlights', 'Sports highlights and action photography', '']
     ],
     celebrations: [
       ['portfolio/celebrations/birthday-candles-reaction.jpg', 'Birthday Candles Reaction', 'Candid reaction during a birthday celebration', 'wide'],
