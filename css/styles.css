@@ -382,3 +382,18 @@ textarea { min-height: 130px; resize: vertical; }
   justify-content: flex-start;
   align-items: flex-start;
 }
+
+
+.form-status {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.form-status.success {
+  color: #2e6f45;
+}
+
+.form-status.error {
+  color: #9b2f26;
+}

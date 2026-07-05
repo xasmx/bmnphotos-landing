@@ -1,4 +1,5 @@
 const SHEET_NAME = 'Gallery';
+const CONTACT_EMAIL = 'contact@bmnphotos.com';
 
 function doGet(e) {
   const category = e && e.parameter && e.parameter.category
@@ -21,6 +22,66 @@ function doGet(e) {
     .sort((a, b) => Number(a.sort_order || 999999) - Number(b.sort_order || 999999));
 
   return jsonOutput({ images });
+}
+
+function doPost(e) {
+  try {
+    const data = parsePostData(e);
+
+    // Basic honeypot spam check. Real visitors will never fill this field.
+    if (String(data.website || '').trim()) {
+      return jsonOutput({ ok: true });
+    }
+
+    const name = String(data.name || '').trim();
+    const email = String(data.email || '').trim();
+    const sessionType = String(data.session_type || '').trim();
+    const message = String(data.message || '').trim();
+
+    if (!name || !email) {
+      return jsonOutput({ ok: false, error: 'Name and email are required.' });
+    }
+
+    const subject = `BMN Photos Inquiry from ${name}`;
+    const body = [
+      'New BMN Photos inquiry',
+      '',
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Session Type: ${sessionType}`,
+      '',
+      'Message:',
+      message || '(No message provided)',
+      '',
+      `Submitted: ${new Date().toLocaleString()}`
+    ].join('\n');
+
+    MailApp.sendEmail({
+      to: CONTACT_EMAIL,
+      subject,
+      body,
+      replyTo: email,
+      name: 'BMN Photos Website'
+    });
+
+    return jsonOutput({ ok: true });
+  } catch (error) {
+    return jsonOutput({ ok: false, error: String(error && error.message ? error.message : error) });
+  }
+}
+
+function parsePostData(e) {
+  if (!e || !e.postData) return {};
+
+  const type = String(e.postData.type || '').toLowerCase();
+  const contents = e.postData.contents || '';
+
+  if (type.indexOf('application/json') !== -1 && contents) {
+    return JSON.parse(contents);
+  }
+
+  // Works with application/x-www-form-urlencoded submissions from URLSearchParams.
+  return e.parameter || {};
 }
 
 function normalizeGalleryRow(image) {

@@ -120,11 +120,13 @@
         </article>
         <article class="contact-card">
           <form id="contactForm">
+            <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-10000px;opacity:0;height:0;width:0;" />
             <label>Name <input name="name" type="text" autocomplete="name" required /></label>
             <label>Email <input name="email" type="email" autocomplete="email" required /></label>
             <label>Session Type <select name="session_type"><option>Event Coverage</option><option>Family Session</option><option>Portrait Session</option><option>Sports Coverage</option><option>Photo Editing</option><option>Photo Restoration / Colorization</option><option>Photo Digitization / Scanning</option><option>Printing / Engraving</option><option>AI Photo Enhancement</option><option>Photo Cutouts</option><option>Other</option></select></label>
             <label>Message <textarea name="message" placeholder="Tell us about your date, location, guest count, and what you want captured."></textarea></label>
             <button class="button primary" type="submit">Send Inquiry</button>
+            <p id="contactStatus" class="form-status" role="status" aria-live="polite"></p>
           </form>
         </article>
       </div>
@@ -136,6 +138,7 @@
       <span>Photography, editing, restoration, printing, digitization, and creative photo services.</span>
     </div>
   </footer>
+  <script src="js/contact-config.js"></script>
   <script src="js/site.js"></script>
 </body>
 </html>
