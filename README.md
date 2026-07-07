@@ -9,6 +9,7 @@ This version keeps the BMN Photos website on GitHub Pages, lets the photographer
 - The photographer can upload images to Google Drive and manage the gallery rows in Google Sheets.
 - The sheet can accept either a full Google Drive share link or a bare Google Drive file ID.
 - The contact form submits to Apps Script and sends an email to contact@bmnphotos.com. It does not save inquiries to the Sheet.
+- Contact details on the homepage include mailto/email, phone, and Instagram links.
 
 ## Files included
 

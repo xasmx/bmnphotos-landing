@@ -225,6 +225,9 @@ h1 {
 .about-card p { color: var(--muted); margin: 0 0 18px; }
 .about-photo { border-radius: var(--radius); overflow: hidden; min-height: 420px; box-shadow: var(--shadow); background: url("../images/photographer-at-work.jpg") center / cover no-repeat, #d6c1aa; }
 .contact-details { display: grid; gap: 12px; margin-top: 26px; color: var(--muted); }
+.contact-details a { color: var(--brand-dark); font-weight: 800; text-decoration: none; }
+.contact-details a:hover,
+.contact-details a:focus-visible { text-decoration: underline; outline: none; }
 form { display: grid; gap: 14px; }
 label { display: grid; gap: 7px; font-weight: 700; color: #3a3027; }
 input, textarea, select { width: 100%; border: 1px solid rgba(36,31,26,.16); background: #fffaf3; color: var(--text); border-radius: 14px; padding: 13px 14px; font: inherit; }
